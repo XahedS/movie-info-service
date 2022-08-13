@@ -1,5 +1,4 @@
 package example.microservice.movieinfoservice.resources;
-
 import example.microservice.movieinfoservice.models.Movie;
 import example.microservice.movieinfoservice.models.MovieSummary;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -27,7 +26,7 @@ public class MovieResource {
         System.out.println("Movie ID : " + movieId + " URL: "+ url);
         MovieSummary movieSummary = restTemplate.getForObject("https://api.themoviedb.org/3/movie/" + movieId +
                 "?api_key=" + apiKey, MovieSummary.class);
-        System.out.println(movieSummary.toString());
+//        System.out.println(movieSummary.toString());
 //        return new Movie(movieId, "Test name");
         return new Movie(movieId, movieSummary.getTitle(), movieSummary.getOverview());
     }
