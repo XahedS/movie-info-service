@@ -1,6 +1,7 @@
 spring.application.name: movie-info-service
 server.port: 8082
 api.key: 9d398897de8a03f0a51a87f88ca0365b
+eureka.client.serviceUrl.defaultZone: http://localhost:9000/eureka/
 
 
 
