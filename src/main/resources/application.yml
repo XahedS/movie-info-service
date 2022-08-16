@@ -1,7 +1,8 @@
 spring.application.name: movie-info-service
 server.port: 8082
 api.key: 9d398897de8a03f0a51a87f88ca0365b
-eureka.client.serviceUrl.defaultZone: http://localhost:8091/Discovery-Server-Application/eureka/
+eureka.client.serviceUrl.defaultZone: http://192.168.18.12:8090/Discovery-Server-Application/eureka/
+spring.profiles.active: tomcatServer
 
 
 

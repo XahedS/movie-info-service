@@ -1,0 +1,9 @@
+server.contextPath: /movie-info-service
+server:
+  servlet:
+    context-path: /movie-info-service
+    application-display-name: movie-info-service
+eureka.client.service-url.defaultZone: http://192.168.18.12:8090/Discovery-Server-Application/eureka/
+eureka.client.register-with-eureka: true
+eureka.client.fetch-registry: true
+eureka.client.preferSameZoneEureka: true
