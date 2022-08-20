@@ -1,6 +1,19 @@
-spring.application.name: movie-info-service
-server.port: 8082
-api.key: 9d398897de8a03f0a51a87f88ca0365b
+spring:
+  application:
+    name: movie-info-service
+server:
+  url: http://192.168.18.11
+  port: 8080
+
+moviedb:
+  api:
+    url: https://api.themoviedb.org
+    version: 3
+    key: 9d398897de8a03f0a51a87f88ca0365b
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${server.url}:${server.port}/eureka/
 
 
 

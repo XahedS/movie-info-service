@@ -42,7 +42,7 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
 		</plugins>
-		<finalName>Movie-Info-Service</finalName>
+		<finalName>movie-info-service</finalName>
 	</build>
 
 </project>
